@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Timer | Study Hub</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/timer.css">
 </head>
 <body>
   <header class="site-header">
@@ -23,9 +24,21 @@
 
   <main class="container page">
     <h1>Pomodoro Timer</h1>
-    <div class="placeholder">
-      <p><strong>Coming soon.</strong></p>
-      <p>A focus timer with short breaks will be added here.</p>
+    <p>Work in focused sessions, then take a short break.</p>
+
+    <div class="timer-box">
+      <div class="timer-modes" role="group" aria-label="Timer mode">
+        <button class="btn btn-secondary active" data-mode="focus" type="button">Focus 25</button>
+        <button class="btn btn-secondary" data-mode="short" type="button">Short break 5</button>
+        <button class="btn btn-secondary" data-mode="long" type="button">Long break 15</button>
+      </div>
+      <div id="timer-display" class="timer-display" aria-live="off">25:00</div>
+      <div class="timer-controls">
+        <button id="timer-toggle" class="btn" type="button">Start</button>
+        <button id="timer-reset" class="btn btn-secondary" type="button">Reset</button>
+      </div>
+      <p id="timer-message" class="timer-message" aria-live="polite">Ready when you are.</p>
+      <p>Focus sessions finished today: <strong id="timer-sessions">0</strong></p>
     </div>
   </main>
 
@@ -33,5 +46,6 @@
     <div class="container"><p>&copy; <span id="year"></span> Study Hub. Built by our group.</p></div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/timer.js"></script>
 </body>
 </html>
