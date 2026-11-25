@@ -1,0 +1,15 @@
+.sr-only { position: absolute; left: -9999px; }
+.todo-form { display: flex; gap: 8px; margin: 16px 0; }
+.todo-form input { flex: 1; }
+.todo-form .btn { margin-top: 0; }
+.todo-filters { display: flex; gap: 8px; margin-bottom: 12px; }
+.todo-filters .btn { margin-top: 0; padding: 6px 14px; }
+.todo-filters .btn.active { background: #1f3a5f; color: #fff; }
+.todo-list { list-style: none; padding: 0; margin: 0; }
+.todo-list li { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid #d9e1ea; border-radius: 6px; margin-bottom: 8px; }
+.todo-list li span { flex: 1; word-break: break-word; }
+.todo-list li.done span { text-decoration: line-through; color: #888; }
+.todo-list .del { background: none; border: 0; color: #b42318; font-size: 1.1rem; cursor: pointer; }
+.todo-empty { color: #777; }
+.todo-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; }
+.todo-footer .btn { margin-top: 0; }

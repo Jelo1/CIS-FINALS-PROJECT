@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List | Study Hub</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/todo.css">
 </head>
 <body>
   <header class="site-header">
@@ -23,9 +24,26 @@
 
   <main class="container page">
     <h1>To-Do List</h1>
-    <div class="placeholder">
-      <p><strong>Coming soon.</strong></p>
-      <p>A task list where you can add, finish and delete tasks will be added here.</p>
+    <p>Add your tasks and tick them off. Your list is saved in this browser.</p>
+
+    <form id="todo-form" class="todo-form">
+      <label for="todo-input" class="sr-only">New task</label>
+      <input id="todo-input" type="text" placeholder="e.g. Finish Math assignment" maxlength="100" required>
+      <button class="btn" type="submit">Add</button>
+    </form>
+
+    <div class="todo-filters" role="group" aria-label="Filter tasks">
+      <button class="btn btn-secondary active" data-filter="all" type="button">All</button>
+      <button class="btn btn-secondary" data-filter="active" type="button">Active</button>
+      <button class="btn btn-secondary" data-filter="done" type="button">Done</button>
+    </div>
+
+    <ul id="todo-list" class="todo-list"></ul>
+    <p id="todo-empty" class="todo-empty">No tasks yet. Add one above.</p>
+
+    <div class="todo-footer">
+      <span id="todo-count">0 tasks left</span>
+      <button id="todo-clear" class="btn btn-secondary" type="button">Clear completed</button>
     </div>
   </main>
 
@@ -33,5 +51,6 @@
     <div class="container"><p>&copy; <span id="year"></span> Study Hub. Built by our group.</p></div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/todo.js"></script>
 </body>
 </html>
