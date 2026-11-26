@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quick Quiz | Study Hub</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
 </head>
 <body>
   <header class="site-header">
@@ -23,9 +24,20 @@
 
   <main class="container page">
     <h1>Quick Quiz</h1>
-    <div class="placeholder">
-      <p><strong>Coming soon.</strong></p>
-      <p>A short multiple-choice quiz will be added here.</p>
+    <p>Web development basics. Pick an answer for each question.</p>
+
+    <div id="quiz-box" class="quiz-box">
+      <p id="quiz-progress" class="quiz-progress"></p>
+      <h2 id="quiz-question" class="quiz-question"></h2>
+      <div id="quiz-options" class="quiz-options"></div>
+      <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+      <button id="quiz-next" class="btn" type="button" hidden>Next</button>
+    </div>
+
+    <div id="quiz-result" class="quiz-box" hidden>
+      <h2>Quiz finished</h2>
+      <p id="quiz-score" class="quiz-score"></p>
+      <button id="quiz-restart" class="btn" type="button">Try again</button>
     </div>
   </main>
 
@@ -33,5 +45,6 @@
     <div class="container"><p>&copy; <span id="year"></span> Study Hub. Built by our group.</p></div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
 </body>
 </html>

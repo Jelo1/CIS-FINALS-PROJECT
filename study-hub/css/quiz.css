@@ -1,0 +1,10 @@
+.quiz-box { max-width: 620px; border: 1px solid #d9e1ea; border-radius: 8px; padding: 20px; margin-top: 16px; }
+.quiz-progress { color: #666; margin: 0 0 4px; font-size: 0.9rem; }
+.quiz-question { margin: 0 0 16px; font-size: 1.25rem; }
+.quiz-options { display: grid; gap: 8px; }
+.quiz-option { text-align: left; padding: 10px 14px; border: 1px solid #b9c4d2; border-radius: 6px; background: #fff; font-size: 1rem; cursor: pointer; }
+.quiz-option:hover:not(:disabled) { background: #f0f4fa; }
+.quiz-option.correct { background: #e3f5e8; border-color: #2e8b4f; }
+.quiz-option.wrong { background: #fde8e8; border-color: #c0392b; }
+.quiz-feedback { min-height: 1.5em; font-weight: bold; }
+.quiz-score { font-size: 1.4rem; }
