@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GPA Calculator | Study Hub</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gpa.css">
 </head>
 <body>
   <header class="site-header">
@@ -23,15 +24,27 @@
 
   <main class="container page">
     <h1>GPA Calculator</h1>
-    <div class="placeholder">
-      <p><strong>Coming soon.</strong></p>
-      <p>A weighted GPA calculator will be added here.</p>
+    <p>Weighted average using the Philippine grading scale (1.00 is the highest, 5.00 is failing).</p>
+
+    <table class="gpa-table">
+      <thead>
+        <tr><th>Subject</th><th>Units</th><th>Grade</th><th><span class="sr-only">Remove</span></th></tr>
+      </thead>
+      <tbody id="gpa-rows"></tbody>
+    </table>
+
+    <div class="gpa-actions">
+      <button id="gpa-add" class="btn btn-secondary" type="button">Add subject</button>
+      <button id="gpa-calc" class="btn" type="button">Calculate</button>
     </div>
+
+    <div id="gpa-result" class="gpa-result" aria-live="polite"></div>
   </main>
 
   <footer class="site-footer">
     <div class="container"><p>&copy; <span id="year"></span> Study Hub. Built by our group.</p></div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/gpa.js"></script>
 </body>
 </html>

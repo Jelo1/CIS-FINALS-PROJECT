@@ -1,0 +1,10 @@
+.sr-only { position: absolute; left: -9999px; }
+.gpa-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+.gpa-table th, .gpa-table td { padding: 8px; border-bottom: 1px solid #d9e1ea; text-align: left; }
+.gpa-table input, .gpa-table select { width: 100%; }
+.gpa-table .del { background: none; border: 0; color: #b42318; font-size: 1.1rem; cursor: pointer; }
+.gpa-actions { display: flex; gap: 8px; }
+.gpa-actions .btn { margin-top: 0; }
+.gpa-result { margin-top: 20px; font-size: 1.2rem; }
+.gpa-result strong { font-size: 1.8rem; }
+.gpa-error { color: #b42318; }
